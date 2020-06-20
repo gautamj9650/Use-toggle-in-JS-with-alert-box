@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+	<p> This is an toggle example with Alert Box </p>
+
+	<button id="1" type="button" onclick="showAndHide(this.id)">Click To Toggle</button>
+    <button id="2" type="button" onclick="showAndHide(this.id)">Click To Toggle</button>
+    <button id="3" type="button" onclick="showAndHide(this.id)">Click To Toggle</button>
+    <button id="4" type="button" onclick="showAndHide(this.id)">Click To Toggle</button>
+    <button id="5" type="button" onclick="showAndHide(this.id)">Click To Toggle</button>
+
+<script type="text/javascript">
+
+	function showAndHide(myid) {
+		alert(myid);
+		var flag = document.getElementById('demo').style.display='block';
+		if(myid==5 && flag=='none'){
+			document.getElementById('demo').style.display='none';
+		}
+	}
+</script>		
+</body>
+</html>
